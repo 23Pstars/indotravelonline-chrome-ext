@@ -1,0 +1,11 @@
+{
+    "name": "fb-rsv-launcher",
+    "version": "1.0.0",
+    "description": "Quick launch to reservation editor on the server.",
+    "scripts": {
+      "sass": "node-sass style.sass style.min.css --output-style=compressed"
+    },
+    "author": "Zaf",
+    "author_uri": "https://lrsoft.co.id"
+  }
+  
