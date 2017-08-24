@@ -8,7 +8,10 @@ const
         "BGFB": "http://book.bali-gili.com",
         "LEFB": "https://book.lembonganexpress.com",
         "LTTFB": "https://www.lomboktourtravel.com",
-        "LRFB": "https://book.lombokreisen.com"
+        "LRFB": "https://book.lombokreisen.com",
+        "LOT": "https://lastonetours.com",
+        "LOTFB": "https://lastonetours.com",
+        "BTGFB": "http://book.balitogilis.com"
     }
 
 go.addEventListener('click', function () {
