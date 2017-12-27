@@ -1,11 +1,9 @@
-var ItoUser, ItoPass;
+var ItoApiKey;
 
 chrome.storage.sync.get({
-    username: '',
-    password: ''
+    api_key: ''
 }, function (items) {
-    ItoUser = items.username;
-    ItoPass = items.password;
+    ItoApiKey = items.api_key;
 });
 
 
@@ -52,6 +50,6 @@ currencyGo.addEventListener('click', function (e) {
             currencyResult.innerHTML = data.result;
         }
     };
-    xhttp.open("GET", "https://bank-data.indotravelonline.com/currency/api/convert?username=" + ItoUser + "&password=" + ItoPass + "&currency_id_from=" + currencyFrom.value + "&currency_id_to=" + currencyTo.value + "&amount=" + currencyAmount.value + "&formatted=1", true);
+    xhttp.open("GET", "https://bank-data.indotravelonline.com/currency/api/convert?api_key=" + ItoApiKey + "&currency_id_from=" + currencyFrom.value + "&currency_id_to=" + currencyTo.value + "&amount=" + currencyAmount.value + "&formatted=1", true);
     xhttp.send();
 });
