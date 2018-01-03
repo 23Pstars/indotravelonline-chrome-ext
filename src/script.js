@@ -20,7 +20,9 @@ var
         "LRFB": "https://book.lombokreisen.com",
         "LOT": "https://lastonetours.com",
         "LOTFB": "https://lastonetours.com",
-        "BTGFB": "http://book.balitogilis.com"
+        "BTGFB": "http://book.balitogilis.com",
+        "KCFB": "https://tiket.kapalcepat.com",
+        "PEFB": "https://book.penidaexpress.com"
     }
 
 fastboatGo.addEventListener('click', function () {
