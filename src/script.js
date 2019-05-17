@@ -12,17 +12,19 @@ var
     fastboatGo = document.getElementById('fastboat-go'),
     fastboatEditorUrl = '/module/fastboat/admin/editor.reservations.php?action=edit&reservation_id=',
     fastboatDomains = {
-        "LBKFB": "https://book.lombokfastboats.com",
-        "GIFB": "https://book.giliislandfastboats.com",
-        "BGFB": "http://book.bali-gili.com",
-        "LEFB": "https://book.lembonganexpress.com",
+
         "LTTFB": "https://www.lomboktourtravel.com",
-        "LRFB": "https://book.lombokreisen.com",
-        "LOT": "https://lastonetours.com",
-        "LOTFB": "https://lastonetours.com",
-        "BTGFB": "http://book.balitogilis.com",
+        "BGFB": "http://book.bali-gili.com",
+        "GIFB": "https://book.giliislandfastboats.com",
         "KCFB": "https://tiket.kapalcepat.com",
-        "PEFB": "https://book.penidaexpress.com"
+        "BTGFB": "http://book.balitogilis.com",
+
+        "LRFB": "https://book.lombokreisen.com",
+        "LBKFB": "https://book.lombokfastboats.com",
+        "LEFB": "https://book.lembonganexpress.com",
+        "PEFB": "https://book.penidaexpress.com",
+
+        "LOTFB": "https://lastonetours.com",
     }
 
 fastboatGo.addEventListener('click', function () {
@@ -52,6 +54,6 @@ currencyGo.addEventListener('click', function (e) {
             currencyResult.innerHTML = data.result;
         }
     };
-    xhttp.open("GET", "https://bank-data.indotravelonline.com/currency/api/convert?api_key=" + ItoApiKey + "&currency_id_from=" + currencyFrom.value + "&currency_id_to=" + currencyTo.value + "&amount=" + currencyAmount.value + "&formatted=1", true);
+    xhttp.open("GET", "https://www.indotravelonline.com/currency/api/convert?api_key=" + ItoApiKey + "&currency_id_from=" + currencyFrom.value + "&currency_id_to=" + currencyTo.value + "&amount=" + currencyAmount.value + "&formatted=1", true);
     xhttp.send();
 });
