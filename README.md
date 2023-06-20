@@ -7,3 +7,8 @@ Chrome extension for INDOTRAVELONLINE staffs.
 ![Pup Up](popup.png)
 
 ![Option](option.png)
+
+
+## Specs
+
+Build using `node v12.22.12`
