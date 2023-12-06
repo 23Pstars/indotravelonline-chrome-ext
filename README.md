@@ -11,4 +11,5 @@ Chrome extension for INDOTRAVELONLINE staffs.
 
 ## Specs
 
-Build using `node v12.22.12`
+Build using `gulp`   
+Node version `12.22.12`

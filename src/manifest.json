@@ -1,26 +1,18 @@
 {
-    "manifest_version": 2,
-
+    "manifest_version": 3,
     "name": "INDOTRAVELONLINE",
     "description": "Chrome extension for INDOTRAVELONLINE staffs.",
     "version": "1.1",
-
     "icons": {
         "16": "logo-ito.png",
         "48": "logo-ito.png",
         "128": "logo-ito.png"
     },
-
-    "browser_action": {
+    "action": {
         "default_icon": "logo-ito.png",
         "default_popup": "index.html"
     },
-
-    "options_ui": {
-        "page": "options.html",
-        "chrome_style": true
-    },
-
+    "options_page": "options.html",
     "permissions": [
         "storage"
     ]
